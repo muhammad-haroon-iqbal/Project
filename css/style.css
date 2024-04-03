@@ -13361,6 +13361,22 @@ body {
   font-family: "Roboto", "Helvetica Neue";
 }
 
+.calander img {
+  width: 100%;
+  height: auto !important;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  position: absolute;
+}
+
+.sign-in img {
+  width: 100%;
+  height: auto !important;
+  max-width: 20px;
+  margin: 4px 10px 16px 10px;
+}
+
 .navbar {
   font-family: "Roboto", "Helvetica Neue";
   background-color: #102039;
@@ -13369,6 +13385,34 @@ body {
   color: #ffffff !important;
   font-size: 14px;
   font-weight: 700;
+}
+
+.navbar-toggler-icon {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.nav-item a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-transition: color 5s ease-in-out;
+  transition: color 5s ease-in-out;
+}
+
+.nav-item a:hover {
+  color: rgb(237, 235, 243);
+  text-shadow: 0 0 25px rgb(234, 235, 241), 0 0 50px orangered;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.navbar-toggler {
+  border: var(--bs-border-width) solid rgb(255, 255, 255);
 }
 
 .fa-magnifying-glass {
@@ -13401,31 +13445,6 @@ body {
   background-color: #102039;
 }
 
-.iframe img {
-  width: 100%;
-  height: auto !important;
-  max-width: 635px;
-}
-
-.first-img img {
-  width: 100%;
-  max-width: 180px;
-  height: auto;
-  margin-right: -10px;
-}
-
-.second-img img {
-  width: 100%;
-  max-width: 180px;
-  height: auto;
-}
-
-.third-img img {
-  width: 100%;
-  max-width: 180px;
-  height: 140px;
-}
-
 .img-sign img {
   width: 100%;
   max-width: 350px;
@@ -13438,4 +13457,38 @@ body {
 
 .footer {
   background-color: #979595;
+}
+
+.img-mv img {
+  width: 100%;
+  max-width: 560;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  form Subscribe {
+    width: 100%;
+    display: block !important;
+    max-width: 530px;
+    margin-top: 10px;
+  }
+  .fa-instagram {
+    -webkit-transition: color 5s ease-in;
+    transition: color 5s ease-in;
+  }
+  .fa-instagram:hover {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+  form input {
+    border-radius: 0 !important;
+  }
+  form subscribe {
+    border-radius: 0 !important;
+  }
+  .search-icon i {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
